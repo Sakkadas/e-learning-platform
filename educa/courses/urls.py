@@ -1,5 +1,6 @@
 from django.urls import path
 from . import views
+from courses.views import CourseListView
 
 urlpatterns = [
     path('mine/',
@@ -35,4 +36,5 @@ urlpatterns = [
     path('content/order/',
          views.ContentOrderView.as_view(),
          name='content_order'),
+    path('', CourseListView.as_view(), name='course_list'),
 ]
