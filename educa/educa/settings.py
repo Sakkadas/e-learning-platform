@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'memcache_status',
     'rest_framework',
     'chat'
+    'channels'
 ]
 
 MIDDLEWARE = [
