@@ -43,4 +43,11 @@ $submit.click(function() {
         $input.focus();
     }
 });
+$input.focus();
+$input.keyup(function(e) {
+    if (e.which === 13) {
+        // submit with enter / return key
+        $submit.click();
+    }
+});
 {% endblock %}
